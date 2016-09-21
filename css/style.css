@@ -2,14 +2,14 @@
 	display: flex;
 	justify-content: flex-start;
 	border-style: solid;
-	margin-left: 10em;
-	margin-right:10em;
+	margin-left: 15em;
+	margin-right: 15em;
 }
 
 #inputs, #story {
 	text-align: center;
-	margin-left: 10em;
-	margin-right: 10em;
+	margin-left: 15em;
+	margin-right: 15em;
 	padding-left: 5em;
 	padding-right: 5em;
 	border-style: solid;
