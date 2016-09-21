@@ -1,0 +1,35 @@
+#header {
+	display: flex;
+	justify-content: flex-start;
+	border-style: solid;
+	margin-left: 10em;
+	margin-right:10em;
+}
+
+#inputs, #story {
+	text-align: center;
+	margin-left: 10em;
+	margin-right: 10em;
+	padding-left: 5em;
+	padding-right: 5em;
+	border-style: solid;
+}
+
+#face {
+	border-right: solid;
+	padding-right: 3em;
+	padding-left: 2.5em;
+}
+
+#face img{
+	height: 7em;
+}
+
+#title {
+	text-align: center;
+	padding-left: 15em;
+}
+
+#title img {
+	height: 3em;
+}
