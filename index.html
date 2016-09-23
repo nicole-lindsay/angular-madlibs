@@ -21,16 +21,19 @@
         </div>
     </div>
     <div id="inputs">
+        <h2>Please select a gender</h2>
+	        <button>Male</button>
+	        <button>Female</button>
         <h2>Please provide the following:</h2>
-        <input type="text" placeholder="female name" ng-model="femaleName">
-        <input type="text" placeholder="job title" ng-model="jobTitle">
-        <input type="text" placeholder="tedious task" ng-model="tediousTask">
-        <input type="text" placeholder="dirty task" ng-model="dirtyTask">
-        <input type="text" placeholder="celebrity" ng-model="celebrity">
-        <input type="text" placeholder="useless skill" ng-model="uselessSkill">
-        <input type="text" placeholder="adjective" ng-model="adjective">
-        <input type="text" placeholder="obnoxious celebrity" ng-model="obnoxiousCelebrity">
-        <input type="text" placeholder="huge percent" ng-model="hugePercent">
+	        <input type="text" placeholder="female name" ng-model="femaleName">
+	        <input type="text" placeholder="job title" ng-model="jobTitle">
+	        <input type="text" placeholder="tedious task" ng-model="tediousTask">
+	        <input type="text" placeholder="dirty task" ng-model="dirtyTask">
+	        <input type="text" placeholder="celebrity" ng-model="celebrity">
+	        <input type="text" placeholder="useless skill" ng-model="uselessSkill">
+	        <input type="text" placeholder="adjective" ng-model="adjective">
+	        <input type="text" placeholder="obnoxious celebrity" ng-model="obnoxiousCelebrity">
+	        <input type="text" placeholder="huge percent" ng-model="hugePercent">
     </div>
     <div id="story">
         <p>{{femaleName}} <span ng-if="femaleName ==  '' || femaleName == undefined">[female name]</span> was a {{jobTitle}} <span ng-if="jobTitle == '' || jobTitle == undefined">[job title]</span> who loved technology. Although she loved parts of her job, she absolutely hated {{tediousTask}}<span ng-if="tediousTask == '' || tediousTask == undefined">[tedious task]</span> and {{dirtyTask}}<span ng-if="dirtyTask == '' || dirtyTask == undefined">[dirty task]</span>. So, {{femaleName}}<span ng-if="femaleName ==  '' || femaleName == undefined">[female name]</span> met with her life mentor {{celebrity}}<span ng-if="celebrity == '' || celebrity == undefined">[celebrity]</span> who told her to learn how to {{uselessSkill}}<span ng-if="uselessSkill == '' || uselessSkill == undefined">[useless skill]</span> with Thinkful. Thinkful didn't offer a course on {{uselessSkill}}<span ng-if="uselessSkill == '' || uselessSkill == undefined">[useless skill]</span> so she studied programming instead.</p>
