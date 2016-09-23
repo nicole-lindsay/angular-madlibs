@@ -1,25 +1,25 @@
 angular.module('myApp', [])
-	.controller('myCtrl', function($scope){
-		$scope.name = "";
-		$scope.jobTitle = "";
-		$scope.tediousTask = "";
-		$scope.dirtyTask = "";
-		$scope.celebrity = "";
-		$scope.uselessSkill = "";
-		$scope.adjective = "";
-		$scope.obnoxiousCelebrity = "";
-		$scope.hugePercent = "";
-		$scope.genderObject = "she";
-		$scope.genderPronoun = "her";
-		$scope.genderSpecial = "her";
-		$scope.genderificationMale = function(){
-			$scope.genderObject = "he";
-			$scope.genderPronoun = "his";
-			$scope.genderSpecial = "him";
+	.controller('myCtrl', function(){
+		this.name = "";
+		this.jobTitle = "";
+		this.tediousTask = "";
+		this.dirtyTask = "";
+		this.celebrity = "";
+		this.uselessSkill = "";
+		this.adjective = "";
+		this.obnoxiousCelebrity = "";
+		this.hugePercent = "";
+		this.genderObject = "she";
+		this.genderPronoun = "her";
+		this.genderSpecial = "her";
+		this.genderificationMale = function(){
+			this.genderObject = "he";
+			this.genderPronoun = "his";
+			this.genderSpecial = "him";
 		};
-		$scope.genderificationFemale = function(){
-			$scope.genderObject = "she";
-			$scope.genderPronoun = "her";
-			$scope.genderSpecial = "her";
+		this.genderificationFemale = function(){
+			this.genderObject = "she";
+			this.genderPronoun = "her";
+			this.genderSpecial = "her";
 		};
 	});
