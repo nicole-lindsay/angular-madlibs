@@ -22,10 +22,10 @@
     </div>
     <div id="inputs">
         <h2>Please select a gender</h2>
-	        <button>Male</button>
-	        <button>Female</button>
+	        <button ng-click="genderificationMale()">Male</button>
+	        <button ng-click="genderificationFemale()">Female</button>
         <h2>Please provide the following:</h2>
-	        <input type="text" placeholder="female name" ng-model="femaleName">
+	        <input type="text" placeholder="name" ng-model="name">
 	        <input type="text" placeholder="job title" ng-model="jobTitle">
 	        <input type="text" placeholder="tedious task" ng-model="tediousTask">
 	        <input type="text" placeholder="dirty task" ng-model="dirtyTask">
@@ -36,8 +36,8 @@
 	        <input type="text" placeholder="huge percent" ng-model="hugePercent">
     </div>
     <div id="story">
-        <p>{{femaleName}} <span ng-if="femaleName ==  '' || femaleName == undefined">[female name]</span> was a {{jobTitle}} <span ng-if="jobTitle == '' || jobTitle == undefined">[job title]</span> who loved technology. Although she loved parts of her job, she absolutely hated {{tediousTask}}<span ng-if="tediousTask == '' || tediousTask == undefined">[tedious task]</span> and {{dirtyTask}}<span ng-if="dirtyTask == '' || dirtyTask == undefined">[dirty task]</span>. So, {{femaleName}}<span ng-if="femaleName ==  '' || femaleName == undefined">[female name]</span> met with her life mentor {{celebrity}}<span ng-if="celebrity == '' || celebrity == undefined">[celebrity]</span> who told her to learn how to {{uselessSkill}}<span ng-if="uselessSkill == '' || uselessSkill == undefined">[useless skill]</span> with Thinkful. Thinkful didn't offer a course on {{uselessSkill}}<span ng-if="uselessSkill == '' || uselessSkill == undefined">[useless skill]</span> so she studied programming instead.</p>
-        <p>What a great decision! With her new skills, {{femaleName}}<span ng-if="femaleName ==  '' || femaleName == undefined">[female name]</span> built a(n) {{adjective}}<span ng-if="adjective == '' || adjective == undefined">[adjective]</span> robot named {{obnoxiousCelebrity}}<span ng-if="obnoxiousCelebrity == '' || obnoxiousCelebrity == undefined">[obnoxious celebrity]</span> that not only loved {{dirtyTask}}<span ng-if="dirtyTask == '' || dirtyTask == undefined">[dirty task]</span> but did it {{hugePercent}}<span ng-if="hugePercent == '' || hugePercent == undefined">[huge percent]</span> faster.</p>
+        <p>{{name}} <span ng-if="name ==  '' || name == undefined">[name]</span> was a {{jobTitle}} <span ng-if="jobTitle == '' || jobTitle == undefined">[job title]</span> who loved technology. Although {{ genderObject }} loved parts of {{ genderPronoun }} job, {{ genderObject }} absolutely hated {{tediousTask}}<span ng-if="tediousTask == '' || tediousTask == undefined">[tedious task]</span> and {{dirtyTask}}<span ng-if="dirtyTask == '' || dirtyTask == undefined">[dirty task]</span>. So, {{name}}<span ng-if="name ==  '' || name == undefined">[name]</span> met with {{ genderPronoun }} life mentor {{celebrity}}<span ng-if="celebrity == '' || celebrity == undefined">[celebrity]</span> who told {{ genderSpecial }} to learn how to {{uselessSkill}}<span ng-if="uselessSkill == '' || uselessSkill == undefined">[useless skill]</span> with Thinkful. Thinkful didn't offer a course on {{uselessSkill}}<span ng-if="uselessSkill == '' || uselessSkill == undefined">[useless skill]</span> so {{ genderObject }} studied programming instead.</p>
+        <p>What a great decision! With {{ genderPronoun }} new skills, {{name}}<span ng-if="name ==  '' || name == undefined">[name]</span> built a(n) {{adjective}}<span ng-if="adjective == '' || adjective == undefined">[adjective]</span> robot named {{obnoxiousCelebrity}}<span ng-if="obnoxiousCelebrity == '' || obnoxiousCelebrity == undefined">[obnoxious celebrity]</span> that not only loved {{dirtyTask}}<span ng-if="dirtyTask == '' || dirtyTask == undefined">[dirty task]</span> but did it {{hugePercent}}<span ng-if="hugePercent == '' || hugePercent == undefined">[huge percent]</span> faster.</p>
     </div>
 </body>
 

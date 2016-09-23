@@ -1,6 +1,6 @@
 angular.module('myApp', [])
 	.controller('myCtrl', function($scope){
-		$scope.femaleName = "";
+		$scope.name = "";
 		$scope.jobTitle = "";
 		$scope.tediousTask = "";
 		$scope.dirtyTask = "";
@@ -9,4 +9,17 @@ angular.module('myApp', [])
 		$scope.adjective = "";
 		$scope.obnoxiousCelebrity = "";
 		$scope.hugePercent = "";
+		$scope.genderObject = "she";
+		$scope.genderPronoun = "her";
+		$scope.genderSpecial = "her";
+		$scope.genderificationMale = function(){
+			$scope.genderObject = "he";
+			$scope.genderPronoun = "his";
+			$scope.genderSpecial = "him";
+		};
+		$scope.genderificationFemale = function(){
+			$scope.genderObject = "she";
+			$scope.genderPronoun = "her";
+			$scope.genderSpecial = "her";
+		};
 	});
