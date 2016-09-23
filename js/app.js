@@ -1,25 +1,26 @@
 angular.module('myApp', [])
 	.controller('myCtrl', function(){
-		this.name = "";
-		this.jobTitle = "";
-		this.tediousTask = "";
-		this.dirtyTask = "";
-		this.celebrity = "";
-		this.uselessSkill = "";
-		this.adjective = "";
-		this.obnoxiousCelebrity = "";
-		this.hugePercent = "";
-		this.genderObject = "she";
-		this.genderPronoun = "her";
-		this.genderSpecial = "her";
-		this.genderificationMale = function(){
-			this.genderObject = "he";
-			this.genderPronoun = "his";
-			this.genderSpecial = "him";
+		var main = this;
+		main.name = "";
+		main.jobTitle = "";
+		main.tediousTask = "";
+		main.dirtyTask = "";
+		main.celebrity = "";
+		main.uselessSkill = "";
+		main.adjective = "";
+		main.obnoxiousCelebrity = "";
+		main.hugePercent = "";
+		main.genderObject = "she";
+		main.genderPronoun = "her";
+		main.genderSpecial = "her";
+		main.genderificationMale = function(){
+			main.genderObject = "he";
+			main.genderPronoun = "his";
+			main.genderSpecial = "him";
 		};
-		this.genderificationFemale = function(){
-			this.genderObject = "she";
-			this.genderPronoun = "her";
-			this.genderSpecial = "her";
+		main.genderificationFemale = function(){
+			main.genderObject = "she";
+			main.genderPronoun = "her";
+			main.genderSpecial = "her";
 		};
 	});
