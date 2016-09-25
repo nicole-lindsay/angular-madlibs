@@ -9,7 +9,7 @@ angular.module('myApp', [])
 		main.uselessSkill = "";
 		main.adjective = "";
 		main.obnoxiousCelebrity = "";
-		main.hugePercent = "";
+		main.hugeNumber = "";
 		main.genderObject = "she";
 		main.genderPronoun = "her";
 		main.genderSpecial = "her";
