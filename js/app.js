@@ -1,6 +1,10 @@
 angular.module('myApp', [])
 	.controller('myCtrl', function(){
 		var main = this;
+		main.submitMadLib = function(){
+			main.myForm.$submitted=true;
+		};
+		main.startingPoint = function(){
 		main.name = "";
 		main.jobTitle = "";
 		main.tediousTask = "";
@@ -22,5 +26,6 @@ angular.module('myApp', [])
 			main.genderObject = "she";
 			main.genderPronoun = "her";
 			main.genderSpecial = "her";
+		};
 		};
 	});

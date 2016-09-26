@@ -20,24 +20,30 @@
             <h1>Automate This!</h1>
         </div>
     </div>
-    <div id="inputs">
-        <h2>Please select a gender</h2>
-	        <button ng-click="main.genderificationMale()">Male</button>
-	        <button ng-click="main.genderificationFemale()">Female</button>
-        <h2>Please provide the following:</h2>
-	        <input type="text" placeholder="name" ng-model="main.name">
-	        <input type="text" placeholder="job title" ng-model="main.jobTitle">
-	        <input type="text" placeholder="tedious task" ng-model="main.tediousTask">
-	        <input type="text" placeholder="dirty task" ng-model="main.dirtyTask">
-	        <input type="text" placeholder="celebrity" ng-model="main.celebrity">
-	        <input type="text" placeholder="useless skill" ng-model="main.uselessSkill">
-	        <input type="text" placeholder="adjective" ng-model="main.adjective">
-	        <input type="text" placeholder="obnoxious celebrity" ng-model="main.obnoxiousCelebrity">
-	        <input type="text" placeholder="huge number" ng-model="main.hugeNumber">
+    <div id="inputs" ng-show="!myForm.$submitted">
+        <form name="myForm">
+            <h2>Please select a gender</h2>
+            <input type="radio" name="gender" value="male" ng-click="main.genderificationMale()">Male
+            <input type="radio" name="gender" value="female" ng-click="main.genderificationFemale()">Female
+            <h2>Please provide the following:</h2>
+            <input type="text" placeholder="name" ng-model="main.name" required>
+            <input type="text" placeholder="job title" ng-model="main.jobTitle" required>
+            <input type="text" placeholder="tedious task" ng-model="main.tediousTask" required>
+            <input type="text" placeholder="dirty task" ng-model="main.dirtyTask" required>
+            <input type="text" placeholder="celebrity" ng-model="main.celebrity" required>
+            <input type="text" placeholder="useless skill" ng-model="main.uselessSkill" required>
+            <input type="text" placeholder="adjective" ng-model="main.adjective" required>
+            <input type="text" placeholder="obnoxious celebrity" ng-model="main.obnoxiousCelebrity" required>
+            <input type="number" placeholder="huge number" ng-model="main.hugeNumber" required>
+            <br>
+            <input type="submit" value="Generate my Mad Lib">
+        </form>
     </div>
-    <div id="story">
+    <div id="story" ng-show="myForm.$submitted">  
         <p>{{main.name}} <span ng-if="main.name ==  '' || main.name == undefined">[name]</span> was a {{main.jobTitle}} <span ng-if="main.jobTitle == '' || main.jobTitle == undefined">[job title]</span> who loved technology. Although {{ main.genderObject }} loved parts of {{ main.genderPronoun }} job, {{ main.genderObject }} absolutely hated {{main.tediousTask}}<span ng-if="main.tediousTask == '' || main.tediousTask == undefined">[tedious task]</span> and {{main.dirtyTask}}<span ng-if="main.dirtyTask == '' || main.dirtyTask == undefined">[dirty task]</span>. So, {{main.name}}<span ng-if="main.name ==  '' || main.name == undefined">[name]</span> met with {{ main.genderPronoun }} life mentor {{main.celebrity}}<span ng-if="main.celebrity == '' || main.celebrity == undefined">[celebrity]</span> who told {{ main.genderSpecial }} to learn how to {{main.uselessSkill}}<span ng-if="main.uselessSkill == '' || main.uselessSkill == undefined">[useless skill]</span> with Thinkful. Thinkful didn't offer a course on {{main.uselessSkill}}<span ng-if="main.uselessSkill == '' || main.uselessSkill == undefined">[useless skill]</span> so {{ main.genderObject }} studied programming instead.</p>
         <p>What a great decision! With {{ main.genderPronoun }} new skills, {{main.name}}<span ng-if="main.name ==  '' || main.name == undefined">[name]</span> built a(n) {{main.adjective}}<span ng-if="main.adjective == '' || main.adjective == undefined">[adjective]</span> robot named {{main.obnoxiousCelebrity}}<span ng-if="main.obnoxiousCelebrity == '' || main.obnoxiousCelebrity == undefined">[obnoxious celebrity]</span> that not only loved {{main.dirtyTask}}<span ng-if="main.dirtyTask == '' || main.dirtyTask == undefined">[dirty task]</span> but did it {{main.hugeNumber}}<span ng-if="main.hugeNumber == '' || main.hugeNumber == undefined">[huge number]</span> times faster.</p>
+        <br>
+        <button ng-click="main.startingPoint()">Start Over</button>
     </div>
 </body>
 
