@@ -24,7 +24,7 @@
         <form name="myForm">
             <h2>Please select a gender</h2>
             <input type="radio" name="gender" value="male" ng-click="main.genderificationMale()">Male
-            <input type="radio" name="gender" value="female" ng-click="main.genderificationFemale()">Female
+            <input type="radio" name="gender" required value="female" ng-click="main.genderificationFemale()">Female
             <h2>Please provide the following:</h2>
             <input type="text" placeholder="name" ng-model="main.name" required>
             <input type="text" placeholder="job title" ng-model="main.jobTitle" required>
