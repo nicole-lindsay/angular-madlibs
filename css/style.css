@@ -33,3 +33,18 @@
 #title img {
 	height: 3em;
 }
+
+.animate {
+	transition: all 0.25s;
+}
+
+.animate.ng-enter,
+.animate.ng-leave.ng-leave-active {
+	font-size: 1em;
+}
+
+.animate.ng-leave,
+.animate.ng-enter.ng-enter-active {
+	font-size: 2em;
+	color: red;
+}

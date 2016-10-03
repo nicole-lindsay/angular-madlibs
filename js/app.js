@@ -1,4 +1,4 @@
-angular.module('myApp', [])
+angular.module('myApp', ['ngAnimate'])
     .controller('myCtrl', function() {
         var main = this;
         main.submitted = false;
@@ -33,6 +33,7 @@ angular.module('myApp', [])
         };
         main.startingPoint = function() {
             main.submitted = false;
+            main.gender = "";
             main.name = "";
             main.jobTitle = "";
             main.tediousTask = "";
