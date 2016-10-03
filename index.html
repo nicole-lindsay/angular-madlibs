@@ -14,7 +14,7 @@
 <body ng-controller="myCtrl as main">
     <div id="header">
         <div id="face">
-            <img src="pics/mad-lib-happy-face.png">
+            <img id="smile" src="pics/mad-lib-happy-face.png">
         </div>
         <div id="title">
             <img src="pics/ng-mad-libs-logo.png">
@@ -43,8 +43,7 @@
             <input type="submit" value="Generate my Mad Lib" ng-click="show=!show">
         </form>
     </div>
-<!--     // directive -> ng-show, ng-hide, etc.
- -->    <div id="story" ng-show="main.submitted">  
+    <div id="story" ng-show="main.submitted">  
         <p> <span class="animate" ng-if="show">{{main.name}}</span> was a <span class="animate" ng-if="show">{{main.jobTitle}}</span> who loved technology. Although {{ main.genderObject }} loved parts of {{main.genderPronoun}} job, {{ main.genderObject }} absolutely hated <span class="animate" ng-if="show">{{main.tediousTask}}</span> and <span class="animate" ng-if="show">{{main.dirtyTask}}</span>. So, <span class="animate" ng-if="show">{{main.name}}</span> met with {{ main.genderPronoun }} life mentor <span class="animate" ng-if="show">{{main.celebrity}}</span> who told {{ main.genderSpecial }} to learn how to <span class="animate" ng-if="show">{{main.uselessSkill}}</span> with Thinkful. Thinkful didn't offer a course on <span class="animate" ng-if="show">{{main.uselessSkill}}</span>, so {{main.genderObject}} studied programming instead.</p>
         <p>What a great decision! With {{ main.genderPronoun }} new skills, <span class="animate" ng-if="show">{{main.name}}</span> built a(n) <span class="animate" ng-if="show">{{main.adjective}}</span> robot named <span class="animate" ng-if="show">{{main.obnoxiousCelebrity}}</span> that not only loved <span class="animate" ng-if="show">{{main.dirtyTask}}</span> but did it <span class="animate" ng-if="show">{{main.hugeNumber}}</span> times faster.</p>
         <br>

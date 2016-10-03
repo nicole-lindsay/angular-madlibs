@@ -21,8 +21,19 @@
 	padding-left: 2.5em;
 }
 
-#face img{
+#smile {
 	height: 7em;
+	animation: roll 4s infinite;
+	transform: rotate(35deg);
+}
+
+@keyframes roll {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 #title {
